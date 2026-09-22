@@ -43,4 +43,26 @@ export const perguntas = [
     return lista[posicao];import {aleatorio} from ‘./aleatorio.js’;<script type=”module” src=”js/script.js”></script>
 import {perguntas} from ‘./perguntas.js;<script src="script.js"></script><script src=”js/script.js”></script><script type=”module” src=”js/aleatorio.js”></script>
 <script type=”module” src=”js/perguntas.js”></script>
-<script type=”module” src=”js/script.js”></script>
+<script type=”module” src=”js/script.js”></script>const botaoJogarNovamente = document.querySelector(".novamente-btn");
+function jogaNovamente(){
+        atual = 0;
+        historiaFinal = "";
+        mostraPergunta();
+}function mostraResultado() {
+        caixaPerguntas.textContent = "Em 2049...";
+        textoResultado.textContent = historiaFinal;
+        caixaAlternativas.textContent = "";
+        botaoJogarNovamente.addEventListener("click", jogaNovamente());
+}<div class= “caixa-resultado”>
+    <p class=”texto-resultado”></p>function jogaNovamente(){
+    atual = 0;
+    historiaFinal = "";
+    mostraPergunta();function mostraResultado() {
+caixaPerguntas.textContent = "Em 2049...";
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent = "";
+botaoJogarNovamente.addEventListener("click", jogaNovamente());
+
+}
+    <button class=”novamente-btn”></button>
+</div>const botaoJogarNovamente = document.querySelector(“.novamente-btn”);
