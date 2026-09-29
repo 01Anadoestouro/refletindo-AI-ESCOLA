@@ -65,4 +65,18 @@ botaoJogarNovamente.addEventListener("click", jogaNovamente());
 
 }
     <button class=”novamente-btn”></button>
-</div>const botaoJogarNovamente = document.querySelector(“.novamente-btn”);
+</div>const botaoJogarNovamente = document.querySelector(“.novamente-btn”);function mostraResultado() {
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent historiaFinal;
+    caixaAlternativas.textContent = "";
+    caixaResultado.classList.add("mostrar");
+    botaoJogarNovamente.addEventListener("click", jogaNovamente());
+}function jogaNovamente(){
+    atual = 0;
+    historiaFinal = "";
+    caixaResultado.classList.remove("mostrar");
+    mostraPergunta();
+}function mostraResultado() {
+//código da função omitido
+    botaoJogarNovamente.addEventListener("click", jogaNovamente);
+}
